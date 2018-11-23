@@ -1,2 +1,0 @@
-# eventman
-Event Management system
