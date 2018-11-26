@@ -1,5 +1,7 @@
 node_modules/**/*
 .expo/*
 npm-debug.*
-package-lock.json
-.watchmanconfig
+*.jks
+*.p12
+*.key
+*.mobileprovision
