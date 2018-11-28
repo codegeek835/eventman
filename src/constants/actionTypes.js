@@ -1,0 +1,7 @@
+export const ON_LOAD = "ON_LOAD";
+export const CURRENT_LOCATION = "CURRENT_LOCATION";
+export const MY_NOTES_ACTION = "MY_NOTES_ACTION";
+export const ADD_NOTES_MODAL = "ADD_NOTES_MODAL";
+export const HANDLE_CHANGE = "HANDLE_CHANGE";
+export const SUBMIT_NOTE = "SUBMIT_NOTE";
+export const SEARCH_NOTES = "SEARCH_NOTES";

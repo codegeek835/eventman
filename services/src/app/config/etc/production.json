@@ -1,0 +1,9 @@
+﻿{
+  "SERVICE_URL": "http://10.131.168.10:1702/api",
+  "API_VERSION": "/v1",
+  "Cache_Expires": {
+    "high": "30",
+    "medium": "30",
+    "low": "30"
+  }
+}

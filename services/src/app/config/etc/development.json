@@ -1,0 +1,10 @@
+﻿{
+  "SERVICE_URL": "http://localhost:51976/api",
+  "API_VERSION": "/v1",
+  "Cache_Expires": {
+    "high": 100,
+    "medium": 60,
+    "low": 30
+
+  }
+}
