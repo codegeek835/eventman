@@ -1,30 +1,45 @@
 import React, { Component } from "react";
 import {
   Container,
-  Header,
   Content,
   Form,
   Item,
   Input,
-  Label
+  Label,
+  Button,
+  Text,
+  Col,
+  View
 } from "native-base";
 export default class Login extends Component {
   render() {
     return (
       <Container>
-        <Header />
-        <Content>
-          <Form>
-            <Item floatingLabel>
-              <Label>Username</Label>
-              <Input />
-            </Item>
-            <Item floatingLabel last>
-              <Label>Password</Label>
-              <Input />
-            </Item>
-          </Form>
-        </Content>
+        <View
+          style={{
+            flex: 1,
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "row",
+            marginTop: -30
+          }}
+        >
+          <Content padder>
+            <Form>
+              <Item floatingLabel>
+                <Label>Username</Label>
+                <Input />
+              </Item>
+              <Item floatingLabel>
+                <Label>Password</Label>
+                <Input />
+              </Item>
+              <Button full rounded primary style={{ marginTop: 20 }}>
+                <Text>Login</Text>
+              </Button>
+            </Form>
+          </Content>
+        </View>
       </Container>
     );
   }

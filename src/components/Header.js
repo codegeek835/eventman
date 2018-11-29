@@ -1,40 +1,31 @@
 import React, { Component } from "react";
 import {
-    Container,
-    Header,
-    Left,
-    Body,
-    Right,
-    Button,
-    Icon,
-    Title
+  Container,
+  Header,
+  Left,
+  Body,
+  Right,
+  Button,
+  Icon,
+  Title
 } from "native-base";
 export default class HeaderMultipleIconExample extends Component {
-    render() {
-        return (
-            <Container>
-                <Header>
-                    <Left>
-                        <Button transparent>
-                            <Icon name="arrow-back" />
-                        </Button>
-                    </Left>
-                    <Body>
-                        <Title>Header</Title>
-                    </Body>
-                    <Right>
-                        <Button transparent>
-                            <Icon name="search" />
-                        </Button>
-                        <Button transparent>
-                            <Icon name="heart" />
-                        </Button>
-                        <Button transparent>
-                            <Icon name="more" />
-                        </Button>
-                    </Right>
-                </Header>
-            </Container>
-        );
-    }
+  render() {
+    return (
+      <Header>
+        <Left>
+          <Button
+            transparent
+            onPress={() => this.props.navigation.navigate("DrawerOpen")}
+          >
+            <Icon name="menu" />
+          </Button>
+        </Left>
+        <Body>
+          <Title>{this.props.title}</Title>
+        </Body>
+        <Right />
+      </Header>
+    );
+  }
 }

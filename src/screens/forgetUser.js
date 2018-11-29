@@ -2,11 +2,6 @@ import React from "react";
 import { StatusBar } from "react-native";
 import {
   Container,
-  Header,
-  Title,
-  Left,
-  Icon,
-  Right,
   Button,
   Body,
   Content,
@@ -14,24 +9,12 @@ import {
   Card,
   CardItem
 } from "native-base";
-export default class Home extends React.Component {
+import Header from "../components/Header";
+export default class ForgetUser extends React.Component {
   render() {
     return (
       <Container>
-        <Header>
-          <Left>
-            <Button
-              transparent
-              onPress={() => this.props.navigation.navigate("DrawerOpen")}
-            >
-              <Icon name="menu" />
-            </Button>
-          </Left>
-          <Body>
-            <Title>HomeScreen</Title>
-          </Body>
-          <Right />
-        </Header>
+        <Header title={"Forget User Name"} />
         <Content padder>
           <Card>
             <CardItem>

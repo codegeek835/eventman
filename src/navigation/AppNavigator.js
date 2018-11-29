@@ -1,14 +1,40 @@
 import React from "react";
-import { DrawerNavigator } from "react-navigation";
+import { createDrawerNavigator } from "react-navigation";
+
+// User Module
 import Login from "../screens/login";
-import Home from "../screens/home";
-import Listing from "../screens/listing";
+import SignUp from "../screens/signUp";
+import ForgetPass from "../screens/forgetPass";
+import ForgetUser from "../screens/forgetUser";
+import Profile from "../screens/profile";
+
 import SideBar from "./sidebar";
-const AppNavigator = DrawerNavigator(
+import Dashboard from "../screens/dashboard";
+import Listing from "../screens/listing";
+import DetailPage from "../screens/detailPage";
+
+import Privacy from "../screens/privacy";
+import TermAndConditions from "../screens/terms";
+import Faq from "../screens/faq";
+
+const AppNavigator = createDrawerNavigator(
   {
-    Home: { screen: Home },
+    // User Module
     Login: { screen: Login },
-    Listing: { screen: Listing }
+    SignUp: { screen: SignUp },
+    ForgetPass: { screen: ForgetPass },
+    ForgetUser: { screen: ForgetUser },
+    Profile: { screen: Profile },
+
+    // Main App
+    Dashboard: { screen: Dashboard },
+    Listing: { screen: Listing },
+    DetailPage: { screen: DetailPage },
+
+    // T&C Related
+    Privacy: { screen: Privacy },
+    TermAndConditions: { screen: TermAndConditions },
+    Faq: { screen: Faq }
   },
   {
     contentComponent: props => <SideBar {...props} />
